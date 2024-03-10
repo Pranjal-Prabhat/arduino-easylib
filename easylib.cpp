@@ -2,19 +2,19 @@
 #include "easylib.h"
 
 void on(byte pin){
-    digitalWrite(a,1);
+    digitalWrite(pin,1);
 }
 
 void off(byte pin){
-    digitalWrite(b,0);
+    digitalWrite(pin,0);
 }
 
 void set(byte pin, bool value){
-    pinMode(c,d);
+    pinMode(pin,value);
 }
 
 void pwm(byte pin , byte value){
-    analogWrite(e,f);
+    analogWrite(pin,value);
 }
 
 void servo(byte degree,byte pin,bool error){
@@ -64,6 +64,14 @@ void digiread(byte pin){
 
 void anaread(byte pin){
   return analogRead(pin);
+}
+
+void print(string str){
+  Serial.print(str);
+}
+
+void println(string str){
+  Serial.println(str)
 }
 
 void l298n(byte array[3],bool arr[3]){
