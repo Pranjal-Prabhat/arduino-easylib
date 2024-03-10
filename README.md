@@ -1,6 +1,7 @@
 # EASYLIB-ARDUINO
 
 This project is created by Pranjal Prabhat and has the proper license.
+This library is still in construction and doesnt have proper exception handling, some features of others sensor will be available soon.
 
 ## Overview
 This project aims to make writing codes for Arduino AVR boards more user-friendly, easy to read, and better understanding.
