@@ -1,13 +1,14 @@
 # EASYLIB-ARDUINO
 
-This project is created by Pranjal Prabhat and has the proper license.
+##AUTHOUR 
+Pranjal Prabhat
 
 ## Overview
 This project aims to make writing codes for Arduino AVR boards more user-friendly, easy to read, and better understanding.
 
 ## Features and Functions
 
-| Function | Reference and Use                                                                                              | Syntax                   |
+| Function | Reference and Use                                                                                              | ARGUMENTS                  |
 |----------|------------------------------------------------------------------------------------------------------------------|--------------------------|
 | `set`    | Selects the pinMode of the pin and takes 2 arguments (byte, bool). 1st argument is to select pin and 2nd argument is to set it for input or output. (you can pass {OUTPUT, INPUT, 1, 0}) | `set(pin, mode);`        |
 | `on`     | Switches on the selected pin.                                                                                   | `on(pin);`               |
