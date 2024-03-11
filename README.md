@@ -2,7 +2,7 @@
 
 ---
 Author: Pranjal Prabhat
-...
+---
 
 ## Overview
 This project aims to make writing codes for Arduino AVR boards more user-friendly, easy to read, and better understanding.
