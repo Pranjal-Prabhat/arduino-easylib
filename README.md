@@ -29,7 +29,32 @@ This project aims to make writing codes for Arduino AVR boards more user-friendl
 
 
 ## How to Use
-To use this library, include it in your Arduino project and call the mentioned functions as needed for your specific application.
+1. **Download the Library:**
+   - Copy the zip file from this repository or download it.
+
+2. **Open Arduino IDE:**
+   - Launch the Arduino IDE on your computer.
+
+3. **Navigate to Sketch:**
+   - Click on "Sketch" in the top menu bar of the Arduino IDE.
+
+4. **Include the Sketch:**
+   - From the dropdown menu, navigate to "Include Sketch."
+
+5. **Add Zip File:**
+   - Click on "Add Zip File" in the sub-menu.
+
+6. **Select the Library Zip File:**
+   - Search for the zip file you downloaded from this repository.
+   - Select the zip file and press "Open."
+
+7. **Installation:**
+   - The library will be installed, and you can now use it in your Arduino sketches.
+
+     ```cpp
+     #include <easylib.h>
+     ```
+   - This line includes the `easylib` library in your sketch, allowing you to use its functions.
 
 ## License
 Software License Agreement (BSD License)
