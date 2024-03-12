@@ -24,6 +24,9 @@ This project aims to make writing codes for Arduino AVR boards more user-friendl
 | `l298n`   | Controls an L298N motor driver. Parameters: array - An array containing four pins: [IN1, IN2, IN3, IN4]. arr - An array containing the corresponding control signals for each pin. [IN1_signal, IN2_signal, IN3_signal, IN4_signal]. | `l298n(array[3], arr[3]);` |
 | `print`    | Prints the specified string to the Serial monitor. Parameters: str - The string to be printed. | `print(str);`                  |
 | `println`  | Prints the specified string followed by a newline character to the Serial monitor. Parameters: str - The string to be printed. | `println(str);`                |
+| `sonarinit`   | Initializes a sonar sensor setup. Takes 3 arguments (byte, byte, byte). 1st is the trigger pin, 2nd is the echo pin, and 3rd (optional) is VCC pin (default -1). If VCC is provided and greater than -1, sets the VCC pin as OUTPUT. | `sonarinit(trig_pin, echo_pin, vcc);`|
+| `serialinit`  | Initializes the Serial communication. Takes 1 argument (int) for the desired baud rate. | `serialinit(init);`|
+
 
 ## How to Use
 To use this library, include it in your Arduino project and call the mentioned functions as needed for your specific application.
