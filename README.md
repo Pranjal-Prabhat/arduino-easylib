@@ -51,7 +51,9 @@ This project aims to make writing codes for Arduino AVR boards more user-friendl
 7. **Installation:**
    The library will be installed, and you can now use it in your Arduino sketches.
 
-
+8. **Compile the Sketch:**
+   After including the library in your Arduino sketch, compile the sketch using the Arduino IDE. This step is essential as it allows the IDE to recognize and showcase the usage of functions provided by the library.
+   
      ```cpp
      #include <easylib.h>
      ```
