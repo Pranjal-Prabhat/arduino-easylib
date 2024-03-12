@@ -10,7 +10,7 @@ void loop() {
 for(int i = 0; i < 180; i++ ){
   servo(9,i);
 }
-for(int i = 180; i > 0; i++ ){
+for(i = 180; i > 0; i-- ){
 servo(9,i);
 }
 }
