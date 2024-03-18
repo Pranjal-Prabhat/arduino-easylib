@@ -71,7 +71,7 @@ int anaread(byte pin){
   return analogRead(pin);
 }
 
-void l298n(byte array[3],bool arr[3],byte ctrl_pin1 = 0, byte ctrl_pin2 = 0,byte value1 = 255,byte value2 = 255){
+void l298n(byte array[4],bool arr[4],byte ctrl_pin1 = 0, byte ctrl_pin2 = 0,byte value1 = 255,byte value2 = 255){
   digitalWrite(array[0],arr[0]);
   digitalWrite(array[1],arr[1]);
   digitalWrite(array[2],arr[2]);
