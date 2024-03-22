@@ -18,7 +18,7 @@ void set(byte pin, bool value);
 void servo(byte degree,byte pin,bool error=false);
 
 //Controls an ultrasonic sensor directly. Takes 3 arguments (byte, byte, bool{optional}). 1st argument sets trig pin, 2nd sets echo pin, and 3rd (optional) is used to select VCC pin if VCC is connected to digital pin of Arduino.
-int sonar(byte remembered,byte trig=0, byte echo=0, byte vcc=0);
+int sonar(byte trig=0, byte echo=0, byte vcc=0);
 
 // Sends analog signals to the specified pin. Parameters: pin - The pin to send analog signals. variable - The analog value to be sent (0 to 255).
 void ana(byte pin, int variable);
@@ -43,7 +43,7 @@ void println(String str);
 //initialise the Serial communication by an argument as baud rate.
 void serialinit(int init);
 //initialise the sonar sensor by giving trig , echo and vcc(optional).Sets pinMode of those pin.
-void sonarinit(byte trig_pin,byte echo_pin,byte vcc=-1,bool remember_for_next=false);
+void sonarinit(byte trig_pin,byte echo_pin,byte vcc=-1);
 
 // Pauses for the specified number of seconds.
 void pause(int number);
@@ -72,7 +72,8 @@ void  mstosec(int ms);
 // Converts seconds to milliseconds.
 void  sectoms (int second);
 
-
+//makes the led of the arduino uno on.
+void ledon();
 
 
 #endif
