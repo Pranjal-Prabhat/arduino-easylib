@@ -18,7 +18,7 @@ void set(byte pin, bool value);
 void servo(byte degree,byte pin,bool error=false);
 
 //Controls an ultrasonic sensor directly. Takes 3 arguments (byte, byte, bool{optional}). 1st argument sets trig pin, 2nd sets echo pin, and 3rd (optional) is used to select VCC pin if VCC is connected to digital pin of Arduino.
-int sonar(byte trig, byte echo, byte vcc);
+int sonar(byte remembered,byte trig=0, byte echo=0, byte vcc=0);
 
 // Sends analog signals to the specified pin. Parameters: pin - The pin to send analog signals. variable - The analog value to be sent (0 to 255).
 void ana(byte pin, int variable);
@@ -43,5 +43,36 @@ void println(String str);
 //initialise the Serial communication by an argument as baud rate.
 void serialinit(int init);
 //initialise the sonar sensor by giving trig , echo and vcc(optional).Sets pinMode of those pin.
-void sonarinit(byte trig_pin,byte echo_pin,byte vcc=-1);
+void sonarinit(byte trig_pin,byte echo_pin,byte vcc=-1,bool remember_for_next=false);
+
+// Pauses for the specified number of seconds.
+void pause(int number);
+
+// Returns the current time in milliseconds since the Arduino board began running the current program.
+void clock();
+
+// Converts minutes to seconds.
+void mintosec(int min);
+
+// Calculate distance based on speed and time.
+void getdistance(int speed , int time);
+
+// Converts minutes to milliseconds.
+void  mintoms(int min);
+
+// Converts seconds to minutes.
+void sectomin(int second);
+
+// Converts milliseconds to minutes.
+void  mstomin(int ms);
+
+// Converts milliseconds to seconds.
+void  mstosec(int ms);
+
+// Converts seconds to milliseconds.
+void  sectoms (int second);
+
+
+
+
 #endif
