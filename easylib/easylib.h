@@ -46,7 +46,7 @@ void serialinit(int init);
 void sonarinit(byte trig_pin,byte echo_pin,byte vcc=-1);
 
 // Pauses for the specified number of seconds.
-void pause(int number);
+void pause(float number);
 
 // Returns the current time in milliseconds since the Arduino board began running the current program.
 void clock();
