@@ -15,7 +15,7 @@ void pwm(byte pin , byte value);
 void set(byte pin, bool value);
 
 //Controls a servo motor directly by using a value between 0 to 180 degrees. Takes 2 arguments (byte, byte). 1st argument to send the value, 2nd to select pin.
-void servo(byte degree,byte pin,bool error=false);
+void servo(byte degree,byte pin);
 
 //Controls an ultrasonic sensor directly. Takes 3 arguments (byte, byte, bool{optional}). 1st argument sets trig pin, 2nd sets echo pin, and 3rd (optional) is used to select VCC pin if VCC is connected to digital pin of Arduino.
 int sonar(byte trig=0, byte echo=0, byte vcc=0);
@@ -75,5 +75,7 @@ void  sectoms (int second);
 //makes the led of the arduino uno on.
 void ledon();
 
+//makes the led of the arduino uno off.
+void ledoff();
 
 #endif
