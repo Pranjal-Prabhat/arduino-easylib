@@ -3,9 +3,10 @@
 void setup(){
 set(13,OUTPUT); //set is used to define pinMode in arduino in it OUTPUT or 1 can be used for out signals and 0 or INPUT can be used for incoming signals.
 set(13,1); // both these codes (line 4 and 5) will work the same.
+//there is no need for set in this code as les on and off itslef defines its pinmode but are included for reference
 }
 void loop(){
-on(13);//on the pin entered.
-pause(0.5);//gives a pause for the suggested seconds.
-off(13);//off the pin entered.
+ledon();
+pause(0.5);
+ledoff();
 }
