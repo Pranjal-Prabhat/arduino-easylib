@@ -57,7 +57,15 @@ This project aims to make writing codes for Arduino AVR boards more user-friendl
 | `println`  | Prints the specified string followed by a newline character to the Serial monitor. Parameters: str - The string to be printed. | `println(str);`                |
 | `sonarinit`   | Initializes a sonar sensor setup. Takes 3 arguments (byte, byte, byte). 1st is the trigger pin, 2nd is the echo pin, and 3rd (optional) is VCC pin (default -1). If VCC is provided and greater than -1, sets the VCC pin as OUTPUT. | `sonarinit(trig_pin, echo_pin, vcc);`|
 | `serialinit`  | Initializes the Serial communication. Takes 1 argument (int) for the desired baud rate. | `serialinit(init);`|
-
+| `pause`    | Pauses the program execution for a specified duration in seconds. Parameters: number - The duration to pause in seconds. | `pause(number);` |
+| `clock`    | Returns the current time since the program started execution in milliseconds. No parameters. | `clock();` |
+| `mintosec` | Converts minutes to seconds. Parameters: min - The value in minutes to convert to seconds. Returns the converted value in seconds. | `mintosec(min);` |
+| `getdistance` | Calculates the distance traveled given a constant speed and time. Parameters: speed - The constant speed of travel. time - The time taken for travel. Returns the distance traveled. | `getdistance(speed, time);` |
+| `mintoms`  | Converts minutes to milliseconds. Parameters: min - The value in minutes to convert to milliseconds. Returns the converted value in milliseconds. | `mintoms(min);` |
+| `sectomin` | Converts seconds to minutes. Parameters: second - The value in seconds to convert to minutes. Returns the converted value in minutes. | `sectomin(second);` |
+| `mstomin`  | Converts milliseconds to minutes. Parameters: ms - The value in milliseconds to convert to minutes. Returns the converted value in minutes. | `mstomin(ms);` |
+| `mstosec`  | Converts milliseconds to seconds. Parameters: ms - The value in milliseconds to convert to seconds. Returns the converted value in seconds. | `mstosec(ms);` |
+| `sectoms`  | Converts seconds to milliseconds. Parameters: second - The value in seconds to convert to milliseconds. Returns the converted value in milliseconds. | `sectoms(second);` |
 
 
 
