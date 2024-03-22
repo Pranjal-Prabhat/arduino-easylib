@@ -51,21 +51,10 @@ bool ir(byte pin , bool config=false){
 void servo(byte degree, byte pin, bool error=false){
     if (degree < 181 && degree > 0){
         degree = degree / 180.0 * 255;
-      analogWrite(pin,degree);
+        analogWrite(pin,degree);
     }
 }
 
-void ledon(){
-  pinMode(13,OUTPUT);
-  digitalWrite(13,1);
-  pinMode(13,NULL);
-}
-
-void ledoff(){
-  pinMode(13,OUTPUT);
-  digitalWrite(13,1);
-  pinMode(13,NULL);
-}
 
 void serialinit(int init){
   Serial.begin(init);
@@ -78,6 +67,18 @@ void println(String str){
  Serial.println(String(str));}
 void on(byte pin){
     digitalWrite(pin, 1);
+}
+
+void ledon(){
+  pinMode(13,OUTPUT);
+  digitalWrite(13,1);
+
+}
+
+void ledoff(){
+  pinMode(13,OUTPUT);
+  digitalWrite(13,0);
+
 }
 
 void pause(int number){
