@@ -51,6 +51,7 @@ bool ir(byte pin , bool config=false){
 void servo(byte degree, byte pin, bool error=false){
     if (degree < 181 && degree > 0){
         degree = degree / 180.0 * 255;
+      analogWrite(pin,degree);
     }
 }
 
