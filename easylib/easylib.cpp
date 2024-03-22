@@ -81,7 +81,7 @@ void ledoff(){
 
 }
 
-void pause(int number){
+void pause(float number){
   delay(number*1000);
 }
 
