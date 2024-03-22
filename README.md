@@ -1,13 +1,15 @@
 # EASYLIB-ARDUINO
 
 ---
-Author: Pranjal Prabhat
+Author: Pranjal Prabhat 👨‍🔬
 ---
 
-## Overview
-This project aims to make writing codes for Arduino AVR boards more user-friendly, easy to read, and better understanding.
+## Whats New 👀
+Bug fixes in function like pause, sonar and sonarinit.
+## Overview 🖐
+This project aims to make writing codes for Arduino AVR boards more user-friendly, easy to read, and better understanding!!!
 
-## How to Use
+## How to Use 👀
 1. **Download the Library:**
    Copy the zip file from this repository or download it.
 
@@ -38,7 +40,7 @@ This project aims to make writing codes for Arduino AVR boards more user-friendl
      ```
    - This line includes the `easylib` library in your sketch, allowing you to use its functions.
 
-## Features and Functions
+## Features and Functions 👀
 
 | Function   | Reference and Use                                                                                              | ARGUMENTS                  |
 |------------|------------------------------------------------------------------------------------------------------------------|--------------------------|
@@ -71,7 +73,7 @@ This project aims to make writing codes for Arduino AVR boards more user-friendl
 
 
 
-## License
+## License 
 Software License Agreement (BSD License)
 
 Copyright (c) 2012, Easylib Industries
