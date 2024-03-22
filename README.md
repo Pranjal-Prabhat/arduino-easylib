@@ -66,6 +66,9 @@ This project aims to make writing codes for Arduino AVR boards more user-friendl
 | `mstomin`  | Converts milliseconds to minutes. Parameters: ms - The value in milliseconds to convert to minutes. Returns the converted value in minutes. | `mstomin(ms)`            |
 | `mstosec`  | Converts milliseconds to seconds. Parameters: ms - The value in milliseconds to convert to seconds. Returns the converted value in seconds. | `mstosec(ms)`            |
 | `sectoms`  | Converts seconds to milliseconds. Parameters: second - The value in seconds to convert to milliseconds. Returns the converted value in milliseconds. | `sectoms(second)`        |
+| `ledon`    | makes the led of the arduino uno on. | `ledon()`|
+| `ledoff`   | makes the led of the arduino uno off.| `ledoff()`|
+
 
 
 ## License
