@@ -1,15 +1,13 @@
 # EASYLIB-ARDUINO
 
----
-Author: Pranjal Prabhat 👨‍🔬
----
 
-## Whats New 👀
+
+## Whats New 
 Bug fixes in function like pause, sonar and sonarinit.
-## Overview 🖐
+## Overview 
 This project aims to make writing codes for Arduino AVR boards more user-friendly, easy to read, and better understanding!!!
 
-## How to Use 👀
+## How to Use
 1. **Download the Library:**
    Copy the zip file from this repository or download it.
 
